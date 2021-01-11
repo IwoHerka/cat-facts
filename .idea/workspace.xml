@@ -1,10 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="528626c0-512d-4d94-8c71-6cecd39db1b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat_facts/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/cat_facts/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat_facts/delivery/cmd.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/cat_facts/delivery/cmd.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat_facts/state.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/cat_facts/state.clj" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Namespace" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProjectId" id="1mufuyAAeumKUWpCwVcpAtprraF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="cursive.last.file.extension./home/siegmeyer/Code/cat-facts/src" value="clj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="ReplState" timestamp="1610353634313">{:repl-history {:ide [], :local [{:command &quot;(def api-url \&quot;https://catfact.ninja/fact\&quot;)&quot;, :offset 42, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;api-url&quot;, :offset 7, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(http/get api-url)&quot;, :offset 18, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(defn- get-fact []\n  (let [resp (http/get api-url)\n        status (:status resp)]\n    status))&quot;, :offset 94, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(defn parse-fact [body]\n  body)&quot;, :offset 31, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(defn- get-fact []\n  (let [resp (http/get api-url)\n        status (:status resp)]\n    (if-not (= status 200)\n      :error-request-failed\n      (parse-fact (:body resp)))))&quot;, :offset 171, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(defn parse-fact [body]\n  (let [json (json/read-str body)]\n    (get json \&quot;fact\&quot;)))&quot;, :offset 82, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(get-fact)&quot;, :offset 10, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(defn foo [a b] (+ a b))&quot;, :offset 24, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(foo 1 4)&quot;, :offset 9, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(def bar (partial foo 5))&quot;, :offset 25, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(bar 6)&quot;, :offset 7, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(def add-five (partial foo 5))&quot;, :offset 30, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(add-five 10)&quot;, :offset 13, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(def add-five (partial foo 5 6))&quot;, :offset 32, :ns &quot;cat-facts.delivery.api&quot;} {:command &quot;(add-five)&quot;, :offset 10, :ns &quot;cat-facts.delivery.api&quot;}], :remote []}}</component>
+  <component name="RunManager">
+    <configuration name="REPL for cat-facts" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="cat-facts" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Clojure REPL.REPL for cat-facts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="528626c0-512d-4d94-8c71-6cecd39db1b8" name="Default Changelist" comment="" />
+      <created>1610348623941</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610348623941</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="448" y="211" width="1084" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610353329855">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="448" y="211" width="1084" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1610353329855" />
+    <state x="766" y="183" width="1022" height="737" key="SettingsEditor" timestamp="1610352558654">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="766" y="183" width="1022" height="737" key="SettingsEditor/60.27.1860.1053@60.27.1860.1053" timestamp="1610352558654" />
   </component>
 </project>
